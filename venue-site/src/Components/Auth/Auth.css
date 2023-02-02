@@ -1,0 +1,123 @@
+.auth-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40rem;
+    flex-direction: column;
+    /* margin-bottom: 10rem; */
+    /* background-color: rgb(247, 247, 247); */
+   
+}
+
+
+
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 60rem;
+    min-width: 60rem;
+    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.394);
+    min-height: 40rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    margin-top: 10rem;
+    background-color: white;
+}
+
+.auth-field {
+    height: 3rem;
+    width: 23rem;
+    /* border-radius: 5px; */
+    background-color: rgba(249, 249, 249, 0.482);
+    border: none;
+    outline: none;
+    margin: 1rem;
+    border-bottom: 1px solid rgba(174, 174, 174, 0.505);
+    transition: 800ms ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.auth-field:focus {
+    background-color: rgba(218, 181, 101, 0.487); 
+    border-bottom: 1px solid black;
+
+}
+
+
+
+
+.auth-submit {
+    margin: 1rem;
+    height: 2rem;
+    width: 9rem;
+    color: white;
+    background-color: rgb(218, 181, 101);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 3px grey;
+    font-family: var(--light-title);
+    cursor: pointer;
+}
+
+.auth-error {
+    font-family: var(--light-title);
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+.auth-head p {
+    font-family: var(--light-title); 
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    margin-bottom: 3rem;
+}
+
+.auth-head h3 {
+    font-family: var(--normal-title);
+    font-size: 6rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.auth-start-letter {
+    font-family: var(--large-title);
+    font-size: 10rem;
+    color: rgb(218, 181, 101);
+    margin: opx;
+}
+
+.auth-text-stress {
+    color: rgb(218, 181, 101);
+}
+
+@media (max-width: 800px) {
+    .auth-form {
+        min-width: 20rem;
+        width: 80%;
+        padding: 5%;
+        margin-top: 6rem;
+    }
+    .auth-field {
+        width: 90%;
+    }
+
+  
+
+    .auth-head h3 {
+        font-size: 4rem;
+    }
+
+    .auth-start-letter {
+        font-size: 6rem;
+    }
+}

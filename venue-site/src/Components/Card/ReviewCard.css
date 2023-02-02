@@ -1,0 +1,92 @@
+.review_container {
+    position: relative;
+    height: 25rem;
+    width: 40rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.315);
+    margin: 2rem;
+    margin-top: 5rem;
+    background-color: white;
+
+    
+}
+
+.review-portrait_container {
+    position: absolute;
+    background-color: rgb(196, 228, 146);
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.review-portrait_ring {
+    height: 8.5rem;
+    width: 8.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.review-portrait_ring img {
+    max-width: 120%;
+    max-height: 140%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.review_container h1 {
+    color: black;
+    font-family: var(--light-title);
+    letter-spacing: 1px;
+    margin-top: 7rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.review_quote {
+    height: 2rem;
+    width: 2rem;
+    color: rgb(203, 223, 156);
+}
+
+.review-text_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.review-text_container p {
+    text-align: center;
+    max-width: 30rem;
+    font-family: var(--light-title);
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+    .review_container {
+        width: 22rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .review-text_container {
+      
+    }
+}

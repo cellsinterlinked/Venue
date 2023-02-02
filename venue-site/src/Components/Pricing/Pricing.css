@@ -1,0 +1,86 @@
+.pricing-table {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background: rgb(248, 248, 248);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-wrapper {
+    height: 30rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+    box-shadow: 2px 2px 6px rgb(203, 203, 203);
+    border-radius: 3rem;
+    background-color: white;
+    font-family: var(--light-title);
+}
+
+.price-wrapper h3 {
+    margin-top: 2rem;
+}
+
+.price-wrapper h1 {
+    font-size: 2.1rem;
+    margin: 0px;
+}
+
+.price-wrapper h2 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: rgb(93, 93, 93);
+}
+
+.price-wrapper p {
+    font-size: .7rem;
+    color: grey;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.price-wrapper strong {
+    font-size: 3rem;
+}
+
+.price-divide {
+    width: 13rem;
+    height: 4px;
+    border-radius: 3px;
+    background-color: rgb(247, 227, 136);
+    margin-bottom: 1.5rem;
+}
+
+.included-wrapper {
+    width: 34%;
+}
+
+.included-item {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price-check {
+    color: rgb(18, 199, 18);
+}
+
+.price-x {
+    color: red;
+}
+
+.green {
+    background-color:rgb(18, 199, 18)
+}
+
+.purple {
+    background-color:rgb(245, 33, 242)
+}

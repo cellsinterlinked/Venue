@@ -1,0 +1,145 @@
+.modal {
+    z-index: 300;
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 15rem;
+    min-height: 15rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+    max-height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    transition: 200ms ease;
+  }
+
+  .image_modal {
+    width: auto;
+    max-width: 100rem;
+    /* aspect-ratio: 1/ 1.5; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: .5rem;
+    height: 70vh;
+  }
+
+  @media(max-width: 800px) {
+    .image_modal {
+      width: 95%;
+      height: auto;
+    }
+  }
+
+  .modal_holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+  
+  .modal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 400ms ease;
+  }
+  
+  .modal-exit {
+    transform: translateY(0);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+  
+  .modal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+
+  .modal-chevron_left {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms ease;
+    cursor: pointer;
+}
+
+.modal-chevron_left:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+
+.modal-chevron_right {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms ease;
+    cursor: pointer;
+}
+
+.modal-chevron_right:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+
+.modal-chev {
+    height: 2rem;
+    width: 2rem;
+    color: grey;
+}
+
+.modal-cancel {
+    position: absolute;
+   
+    top: 1rem;
+  
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms ease;
+    cursor: pointer; 
+    background-color: white;
+    border-radius: 5px;
+    z-index: 400;
+    transition: 100ms ease;
+}
+
+.modal-cancel:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+
+.modal_close {
+    height: 2rem;
+    width: 2rem;
+    color: grey;
+}
